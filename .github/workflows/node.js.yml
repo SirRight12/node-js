@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  build: "npm install express && npm install socket.io @4.6.1 -exact
 
     runs-on: ubuntu-latest
 
