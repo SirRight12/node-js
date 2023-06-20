@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <style>
+         html, body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: black; 
+        } 
+        #waiting {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            z-index: 100;
+        }
+        #spectator {
+            position: absolute;
+            top: -13%;
+            font-size: 100px;
+            color: white;
+            font-family: fantasy;
+        }
+    </style>
+    <head>
+        <title>I stole this</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                user-select: none;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="placeholder" style="position: relative;">
+            <div class="placeholder" style="position: absolute;width: 100%; display: flex; align-items: center; padding: 20px;">
+                <div class="placeholder" style="background-color: rgb(255, 0, 0); height: 50px; width: 100%;transform: rotate(180deg)">
+                    <div class="placeholder" id="playerHealth"style="transform: rotateY(180deg);background-color: yellow; height: 50px; width: 100%;"></div>
+                </div>
+                <div class="placeholder" id="time"style=" color: white; font-size: 50px;font-family: cursive;background-color: rgb(255,0,0); width: 100px; height: 100px;flex-shrink: 0; display:flex; align-items: center; justify-content: center;">
+                99
+                </div>
+                <div style="background-color: rgb(255, 0, 0); height: 50px; width: 100%;">
+                    <div id="enemyHealth"style="background-color: yellow; height: 50px; width: 100%;" > </div>
+                </div>
+            </div>
+            <div id="result"style="color:rgb(0, 0, 0);font-family: sans-serif; font-size: 100px; width: 1024px;height: 576px; position: absolute;display: none;align-items: center;justify-content: center;">TIE</div>
+            <canvas>
+            </canvas>
+        </div>
+        <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+        <script src="class.js"></script>
+        <script src="frontend.js"></script>
+    </body>
+</html>
